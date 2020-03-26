@@ -1,3 +1,4 @@
+'''
 #2
 print("exercicio 2:")
 nome = input("seu nome")
@@ -95,12 +96,10 @@ print(str(velKmh)+"km/h")
 
 #11
 print("exercicio 11:")
-salarioAntigo = float(input("Antigo Salario"))
-salarioNovo = float(input("Novo Salario"))
-
-percentual = int((salarioNovo/salarioAntigo-1)*100)
-print(str(percentual)+"% de aumento")
-
+salarioAntigo = float(input("Qual o valor do antigo Salario? "))
+salarioNovo = float(input("Qual o valor do novo Salario? "))
+print(str(int((salarioNovo/salarioAntigo-1)*100))+"% de aumento")
+'''
 #12
 print("exercicio 12.1:")
 
@@ -116,14 +115,25 @@ soma = 0
 for numeros in arrayApoio:
     soma = int(numeros)+soma
 print(soma)
+
 #metodo2
 print("exercicio 12.2:")
-primeiro = int(int(rmRecebido)/10000)
-restoPrimeiro = int(int(rmRecebido)%10000)
-segundo = int(int(restoPrimeiro)/1000)
-restoSegundo = int(int(restoPrimeiro)%1000)
+rmRecebido = int(input("informe o RM"))
+primeiro = int(rmRecebido/10000)
+segundo = int((rmRecebido%10000)/1000)
+terceiro = int(((rmRecebido%10000)%1000)/100)
+quarto = int((((rmRecebido%10000)%1000)%100)/10)
+quinto = int((((rmRecebido%10000)%1000)%100)%10)
+
+
+print(primeiro)
 print(segundo)
-print(restoSegundo)
+print(terceiro)
+print(quarto)
+print(quinto)
+
+
+
 
 #13
 print("exercicio 13:")
