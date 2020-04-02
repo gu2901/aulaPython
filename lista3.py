@@ -31,7 +31,7 @@ elif (gols2>gols1):
     print(time2+" é o vencedor")
 else:
     print("EMPATE")
-
+'''
 
 #5
 jornadaExigida = int(input("qual a jornada"))
@@ -60,6 +60,7 @@ else:
 
 salarioTotal = int(salarioRegular+valorExtraPagar)
 print(salarioTotal)
+'''
 #6 Faça um programa para ler dois números inteiros A e B e informar se A é divisível por B
 numA = int(input("digite o num A"))
 numB = int(input("digite o num B"))
